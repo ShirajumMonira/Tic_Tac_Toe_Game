@@ -6,27 +6,18 @@ import java.awt.event.*;
 
 public class Play_Gui extends JFrame{
 
-    // declaration of variables below
-
-    // a frame is a window with minimize, restore, and close buttons
     private JFrame f;
-    // a panel is like a mini-frame used for layout
+    
     private JPanel p1, p2;
-    // buttons are for clicking! :)
-    // one has [] beside the name, making it an array, or a group of buttons
+    
     private JButton newB, quitB, b[];
-    // boolean values can either be true or false
-    // isXturn determines player's turn (X for true, O for false)
-    // isGameFinished determines whether the game is over
-    // isAITurn is used for playing against the computer
+   
     private boolean isXturn, isGameFinished, isAITurn;
-    // int have integer values
+    
     private int numberOfBoxesLeft, playerMode;
-    // myAction is another class which defines the behavior
-    // of the buttons when clicked
+    
     private myAction action;
 
-    // instantiation of the variables declared above
     public Play_Gui(){
         // defines the frame's title bar name
         f = new JFrame("Tic-Tac-Toe");
